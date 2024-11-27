@@ -9,7 +9,7 @@
     <div class="right" />
   </div>
   <el-main class="main">
-
+    <el-text>test</el-text>
   </el-main>
 </template>
 
