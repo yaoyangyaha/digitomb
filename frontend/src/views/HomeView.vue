@@ -18,15 +18,21 @@ const url="",name="张三",tribe="x族",province="xx省",city="哥谭市",years=
         <el-image :src="url" style="height: 300px;width: 200px"></el-image>
       </el-col>
       <el-col :span="10">
-        <el-text>{{ name }}</el-text>
-        <br/>
-        <el-text>{{ tribe }}</el-text>
-        <br/>
-        <el-text>{{ province }}</el-text>
-        <br/>
-        <el-text>{{ city }}</el-text>
-        <br/>
-        <el-text>{{ years }}</el-text>
+        <div class="frontcard">
+          <h2>{{ name }}</h2>
+          <br/>
+          <!--<el-text size="large">{{ tribe }}</el-text>-->
+          <p>{{ tribe }}</p>
+          <br/>
+          <!--<el-text size="large">{{ province }}</el-text>-->
+          <p>{{ province }}</p>
+          <br/>
+<!--          <el-text size="large">{{ city }}</el-text>-->
+          <p>{{ city }}</p>
+          <br/>
+<!--          <el-text size="large">{{ years }}</el-text>-->
+          <p>{{ years }}</p>
+        </div>
       </el-col>
     </el-row>
     <br/>
@@ -64,5 +70,9 @@ const url="",name="张三",tribe="x族",province="xx省",city="哥谭市",years=
   height: 2390px;
   background: url("@/assets/background.jpg");
   background-size: 100% auto;
+}
+.frontcard {
+  font-size: 16px;
+  margin: 2px;
 }
 </style>
